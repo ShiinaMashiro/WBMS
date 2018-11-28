@@ -1,0 +1,22 @@
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    name: ipproxy
+    url: jdbc:mysql://rm-bp1g3v2x226f57x3qmo.mysql.rds.aliyuncs.com:3306/wbms?characterEncoding=utf8&useSSL=false
+    username: oreki
+    password: Ywc03525975
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 7777
+#日志等级
+logging:
+  file: /usr/local/ipproxy/ipproxy-web.log
+  level: debug
